@@ -56,7 +56,7 @@
   },
 
   "ButtonWeiterleitung": {
-    "message": "Beim Kurz-URL Dienst hinterlegte URL ermitteln",
+    "message": "Beim Kurz-URL Dienst hinterlegte Domain ermitteln",
     "description": "Button text for deducing the target URL if the URL is a redirect"
   },
 
@@ -71,7 +71,7 @@
   },
 
   "T1Erklaerung": {
-    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link  wird aufgrund der bekannten Vertrauenswürdigkeit der Domain (<div='torpedoHighlight'>fett hervorgehoben Bereich der URL</div>) als gering eingestuft.",
+    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link  wird aufgrund der bekannten Vertrauenswürdigkeit der Domain (<div class='torpedoHighlight'>fett hervorgehoben Bereich</div>) als gering eingestuft.",
     "description": "Information on the classification of this domain"
   },
 
@@ -96,12 +96,12 @@
   },
 
   "T2Erklaerung": {
-    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link wird aufgrund Ihren früheren Angaben zur Vertrauenswürdigkeit der Domain (<div='torpedoHighlight'>fett hervorgehoben Bereich der URL</div>) als gering eingestuft.",
+    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link wird aufgrund Ihren früheren Angaben zur Vertrauenswürdigkeit der Domain (<div class='torpedoHighlight'>fett hervorgehoben Bereich</div>) als gering eingestuft.",
     "description": "Information on the classification of this domain"
   },
 
   "T2Infotext": {
-    "message": "Das bedeutet, dass Sie URLs mit dieser Domain mindestens zweimal in der Vergangenheit durch Anklicken des Links aufgerufen haben oder diese Domain manuell - z.B. über die TORPEDO Einstellungen - zur Liste der vertrauenswürdigen Domains hinzugefügt haben.",
+    "message": "Das bedeutet, dass Sie Domains mit dieser Domain mindestens zweimal in der Vergangenheit durch Anklicken des Links aufgerufen haben oder diese Domain manuell - z.B. über die TORPEDO Einstellungen - zur Liste der vertrauenswürdigen Domains hinzugefügt haben.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -121,17 +121,17 @@
   },
 
   "T31Erklaerung": {
-    "message": "<div='torpedoHighlight'>Unbekanntes Risiko:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Sie müssen hier das Risiko selbst einstufen. Hierzu prüfen Sie die Domain (<div='torpedoHighlight'>fett hervorgehobener Bereich der URL</div>). ",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Sie müssen hier das Risiko selbst einstufen. Hierzu prüfen Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich</div>). ",
     "description": "Information on the classification of this domain"
   },
 
   "T31Infotext": {
-    "message": "Das bedeutet, dass die Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. URLs mit dieser Domain wurden auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft.",
+    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft.",
     "description": "More information on the evaluation of this domain"
   },
 
   "T31GluehbirneText": {
-    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain sorgfältig.</div=> Passt die Domain (und nicht andere Teile der URL) zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
+    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain sorgfältig.</div class=> Passt die Domain zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
     "description": "Advice for the user"
   },
 
@@ -146,17 +146,17 @@
   },
 
   "T32Erklaerung": {
-    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich der URL</div>) prüfen.",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich</div>) prüfen.",
     "description": "Information on the classification of this domain"
   },
 
   "T32Infotext": {
-    "message": "Das bedeutet, dass die Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. URLs mit dieser Domain wurden auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten URL im Text und der hinterlegten URL, 2) die Tatsache, dass die Domain der URL hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine URL zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen URL hinter dem Link abweicht.",
+    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
     "description": "More information on the evaluation of this domain"
   },
 
   "T32GluehbirneText": {
-    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain besonders sorgfältig.</div> Passt die Domain (und nicht andere Teile der URL) zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
+    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain besonders sorgfältig.</div> Passt die Domain zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
     "description": "Advice for the user"
   },
 
@@ -171,17 +171,17 @@
   },
 
   "T33Erklaerung": {
-    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich der URL</div>) prüfen.",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich </div>) prüfen.",
     "description": "Information on the classification of this domain"
   },
 
   "T33Infotext": {
-    "message": "Das bedeutet, dass die Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. URLs mit dieser Domain wurden auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten URL im Text und der hinterlegten URL, 2) die Tatsache, dass die Domain der URL hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine URL zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen URL hinter dem Link abweicht.",
+    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
     "description": "More information on the evaluation of this domain"
   },
 
   "T33GluehbirneText": {
-    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain besonders sorgfältig.</div> Passt die Domain (und nicht andere Teile der URL) zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
+    "message": "<div class='torpedoHighlight'>Überprüfen Sie die Domain besonders sorgfältig.</div> Passt die Domain zum Inhalt der Nachricht? Ist der Name der Domain richtig geschrieben? Wenn Sie dies nicht eindeutig beurteilen können, sollten Sie weitere Informationen einholen. Wenn die Domain nicht vertrauenswürdig ist, löschen Sie diese E-Mail und/oder informieren den Support.",
     "description": "Advice for the user"
   },
 
@@ -196,12 +196,12 @@
   },
 
   "T4Erklaerung": {
-    "message": "Diese URL wurde bereits mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht. Das Risiko wird als <div class='torpedoHighlight'>hoch</div> eingeschätzt.<br>Sollten Sie dennoch der Ansicht sein, dass es sich hier um eine legitime URL handelt, dann können Sie unten auf „Link aktivieren“ klicken. Danach sollten Sie die URL nochmal sorgfältig prüfen.",
+    "message": "Diese Domain wurde bereits mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht. Das Risiko wird als <div class='torpedoHighlight'>hoch</div> eingeschätzt.<br>Sollten Sie dennoch der Ansicht sein, dass es sich hier um eine legitime Domain handelt, dann können Sie unten auf „Link aktivieren“ klicken. Danach sollten Sie die Domain nochmal sorgfältig prüfen.",
     "description": "Information on the classification of this domain"
   },
 
   "T4Infotext": {
-    "message": "Die Cyber Threat Coalition hat sich zum Ziel gemacht eine Liste von betrügerischen URLs zu sammeln, die im Zusammenhang mit Phishing und Corona bzw. Covid-19 aufgetaucht sind in einer Blacklist zu sammeln. Dies geschieht aus dem Grund, da diese URLs aktuell in einer großen Menge und in sich schnell wandelnden Varianten auftreten. Wir wollen dazu einen Beitrag leisten und vorübergehend auch eine Blacklist in TORPEDO integrieren, damit Sie gegen diese URLs geschützt sind.</div>",
+    "message": "Die Cyber Threat Coalition hat sich zum Ziel gemacht eine Liste von betrügerischen Domains zu sammeln, die im Zusammenhang mit Phishing und Corona bzw. Covid-19 aufgetaucht sind in einer Blacklist zu sammeln. Dies geschieht aus dem Grund, da diese Domains aktuell in einer großen Menge und in sich schnell wandelnden Varianten auftreten. Wir wollen dazu einen Beitrag leisten und vorübergehend auch eine Blacklist in TORPEDO integrieren, damit Sie gegen diese Domains geschützt sind.</div>",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -221,12 +221,12 @@
   },
 
   "T4aErklaerung": {
-    "message": "Sie haben diese URL aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain (<div class='torpedoHighlight'>fett markierter Bereich</div>) nochmal besonders sorgfältig.",
+    "message": "Sie haben diese Domain aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain (<div class='torpedoHighlight'>fett markierter Bereich</div>) nochmal besonders sorgfältig.",
     "description": "Information on the classification of this domain"
   },
 
   "T4aInfotext": {
-    "message": "Die Cyber Threat Coalition hat sich zum Ziel gemacht eine Liste von betrügerischen URLs zu sammeln, die im Zusammenhang mit Phishing und Corona bzw. Covid-19 aufgetaucht sind in einer Blacklist zu sammeln. Dies geschieht aus dem Grund, da diese URLs aktuell in einer großen Menge und in sich schnell wandelnden Varianten auftreten. Wir wollen dazu einen Beitrag leisten und vorübergehend auch eine Blacklist in TORPEDO integrieren, damit Sie gegen diese URLs geschützt sind.</div>",
+    "message": "Die Cyber Threat Coalition hat sich zum Ziel gemacht eine Liste von betrügerischen Domains zu sammeln, die im Zusammenhang mit Phishing und Corona bzw. Covid-19 aufgetaucht sind in einer Blacklist zu sammeln. Dies geschieht aus dem Grund, da diese Domains aktuell in einer großen Menge und in sich schnell wandelnden Varianten auftreten. Wir wollen dazu einen Beitrag leisten und vorübergehend auch eine Blacklist in TORPEDO integrieren, damit Sie gegen diese Domains geschützt sind.</div>",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -246,62 +246,62 @@
   },
 
   "ShortURLErklaerung": {
-    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist nicht die Ziel-URL. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste die Ziel-URL ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist nicht die Ziel-Domain. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
   "ShortURLInfotext": {
-    "message": "Anhand des Aufbaus der hinterlegten URL erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die Ziel-URL zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese URL interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-URL zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-URL zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-URL direkt zu schicken.",
+    "message": "Anhand des Aufbaus der hinterlegten Domain erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die Ziel-Domain zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese Domain interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-Domain zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-Domain zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-Domain direkt zu schicken.",
     "description": "More information on the evaluation of this domain"
   },
 
   "ShortURLGluehbirneText": {
-    "message": "Beauftragen Sie TORPEDO die Ziel-URL zu ermitteln.",
+    "message": "Beauftragen Sie TORPEDO die Ziel-Domain zu ermitteln.",
     "description": "Advice for the user"
   },
 
   "ShortURLLinkDeaktivierung": {
-    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-Domain ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
   "URLnachErmittelnButton2Ueberschrift": {
-    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
+    "message": "Die hinterlegte Domain <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
     "description": "Header for tooltip"
   },
 
   "URLnachErmittelnButton2Erklaerung": {
-    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist allerdings auch nicht die Ziel-URL. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste die Ziel-URL ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist allerdings auch nicht die Ziel-Domain. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
   "URLnachErmittelnButton2Infotext": {
-    "message": "Die hinterlegte URL:<br><URL><br>Anhand des Aufbaus der hinterlegten URL erkennt TORPEDO, dass Sie von dieser URL aus zu obiger Ziel-URL weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten URL, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-URL erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-URL zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese URL interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-URL zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-URL zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-URL direkt zu schicken.",
+    "message": "Die hinterlegte Domain:<br><URL><br>Anhand des Aufbaus der hinterlegten Domain erkennt TORPEDO, dass Sie von dieser Domain aus zu obiger Ziel-Domain weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten Domain, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-Domain erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-Domain zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese Domain interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-Domain zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-Domain zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-Domain direkt zu schicken.",
     "description": "More information on the evaluation of this domain"
   },
 
   "URLnachErmittelnButton2GluehbirneText": {
-    "message": "Beauftragen Sie TORPEDO die Ziel-URL zu ermitteln.",
+    "message": "Beauftragen Sie TORPEDO die Ziel-Domain zu ermitteln.",
     "description": "Advice for the user"
   },
 
   "URLnachErmittelnButton2LinkDeaktivierung": {
-    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-Domain ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
   "URLnachErmittelnButtonPrivacyModeUeberschrift": {
-    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
+    "message": "Die hinterlegte Domain <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
     "description": "Header for tooltip"
   },
 
   "URLnachErmittelnButtonPrivacyModeErklaerung": {
-    "message": "Diese URL wird nun überprüft. Bitte warten Sie...",
+    "message": "Diese Domain wird nun überprüft. Bitte warten Sie...",
     "description": "Information on the classification of this domain"
   },
 
   "URLnachErmittelnButtonPrivacyModeInfotext": {
-    "message": "Die hinterlegte URL:<br><URL><br>Anhand des Aufbaus der hinterlegten URL erkennt TORPEDO, dass Sie von dieser URL aus zu obiger Ziel-URL weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten URL, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-URL erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-URL zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese URL interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-URL zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-URL zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-URL direkt zu schicken.",
+    "message": "Die hinterlegte Domain:<br><URL><br>Anhand des Aufbaus der hinterlegten Domain erkennt TORPEDO, dass Sie von dieser Domain aus zu obiger Ziel-Domain weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten Domain, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-Domain erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-Domain zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese Domain interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-Domain zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-Domain zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-Domain direkt zu schicken.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -311,7 +311,7 @@
   },
 
   "URLnachErmittelnButtonPrivacyModeLinkDeaktivierung": {
-    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-Domain ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
@@ -326,12 +326,12 @@
   },
 
   "WarnungPhishInfotext": {
-    "message": "Das bedeutet, dass die Sonderfälle (Unstimmigkeit, Kurz-URL oder Weiterleitung) in einer ungewöhnlichen Konstellation vorliegen. Diese Konstellation deutet stark auf einen Betrugsversuch hin, da dies ein typisches Vorgehen von Betrügern ist.<br>Die hinterlegte URL ist ggf. auch nicht die Ziel-URL. Daher würde ein Klicken auf den Link auch Ihre Privatsphäre gefährden.",
+    "message": "Das bedeutet, dass die Sonderfälle (Unstimmigkeit, Kurz-URL oder Weiterleitung) in einer ungewöhnlichen Konstellation vorliegen. Diese Konstellation deutet stark auf einen Betrugsversuch hin, da dies ein typisches Vorgehen von Betrügern ist.<br>Die hinterlegte Domain ist ggf. auch nicht die Ziel-Domain. Daher würde ein Klicken auf den Link auch Ihre Privatsphäre gefährden.",
     "description": "More information on the evaluation of this domain"
   },
 
   "WarnungPhishGluehbirneText": {
-    "message": "Stellen Sie sicher, dass die E-Mail wirklich von einem Ihnen bekannten Absender kommt. Nutzen Sie dazu keine Informationen aus der E-Mail,sondern, bekannte Informationen oder eine Suchmaschine. Alternativ weisen Sie auf das Problem hin und bitten darum, die Ziel-URL in der E-Mail anzugeben.<br>Kommt die E-Mail nicht von einem Ihnen bekannten Absender, löschen Sie diese E-Mail.",
+    "message": "Stellen Sie sicher, dass die E-Mail wirklich von einem Ihnen bekannten Absender kommt. Nutzen Sie dazu keine Informationen aus der E-Mail,sondern, bekannte Informationen oder eine Suchmaschine. Alternativ weisen Sie auf das Problem hin und bitten darum, die Ziel-Domain in der E-Mail anzugeben.<br>Kommt die E-Mail nicht von einem Ihnen bekannten Absender, löschen Sie diese E-Mail.",
     "description": "Advice for the user"
   },
 
@@ -451,7 +451,7 @@
   },
 
   "referrerExample": {
-    "message": "Zum Beispiel: Die URL https://deref-gmx.net/mail/client/<span style='color:blue'>OcIb3TeWrtE</span>/dereferrer/?redirectUrl=https%3A%2F%2Fwww.google.de/ leitet zu der URL https://www.google.de weiter.",
+    "message": "Zum Beispiel: Die URL https://deref-gmx.net/mail/client/<span style='color:blue'>OcIb3TeWrtE</span>/dereferrer/?redirectUrl=https%3A%2F%2Fwww.google.de/ leitet zu der Domain https://www.google.de weiter.",
     "description": "Description of referrers."
   },
 
@@ -471,7 +471,7 @@
   },
 
   "shortURLInfo": {
-    "message": "Kurz-URL bedeutet, dass die URL hinter dem Link nicht die Ziel URL ist, sondern erst einmal ein sogenannter Kurz-URL-Dienst. Von dieser URL werden Sie automatisch zum tatsächlichen, vorgesehenen Ziel weitergeleitet.",
+    "message": "Kurz-URL bedeutet, dass die Domain hinter dem Link nicht die Ziel Domain ist, sondern erst einmal ein sogenannter Kurz-URL-Dienst. Von dieser Domain werden Sie automatisch zum tatsächlichen, vorgesehenen Ziel weitergeleitet.",
     "description": "Short URL description"
   },
 
@@ -551,17 +551,17 @@
   },
 
   "alreadyInTrustedUrls": {
-    "message": "Die von Ihnen eingegebene URL befindet sich bereits in der Liste der von den Entwicklern als vertrauenswürdig eingestuften Domains.",
+    "message": "Die von Ihnen eingegebene Domain befindet sich bereits in der Liste der von den Entwicklern als vertrauenswürdig eingestuften Domains.",
     "description": "Entered URL is already in list of trusted URLs"
   },
 
   "alreadyInUserDefinedDomains": {
-    "message": "Die von Ihnen eingegebene URL befindet sich bereits in der Liste der von Ihnen als vertrauenswürdig eingestuften Domains.",
+    "message": "Die von Ihnen eingegebene Domain befindet sich bereits in der Liste der von Ihnen als vertrauenswürdig eingestuften Domains.",
     "description": "Entered URL is already in list of user defined URLs"
   },
 
   "alreadyInReferrerList": {
-    "message": "Die von Ihnen eingegebene URL befindet sich bereits in der Liste der Weiterleitungs-Domains.",
+    "message": "Die von Ihnen eingegebene Domain befindet sich bereits in der Liste der Weiterleitungs-Domains.",
     "description": "Entered URL is already in list of referrer URLs"
   },
 
@@ -596,7 +596,7 @@
   },
 
   "guide_extras": {
-    "message": "Prüfung der URL",
+    "message": "Prüfung der Domain",
     "description": "Tutorial side bar: Chapter 3"
   },
 

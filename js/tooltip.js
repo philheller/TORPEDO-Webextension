@@ -39,7 +39,7 @@ function tooltipText() {
                 <p id='torpedoAdviceText'></p> \
               </div> \
 			        <div id='torpedoAdviceDiv'><p id='torpedoMoreAdvice'></p></div> \
-              <!--<div id='torpedoInfo'>  \
+              <!-- <div id='torpedoInfo'>  \
                 <img id='torpedoInfoImage' src='" +
     chrome.extension.getURL("img/info.png") +
     "'> \
@@ -165,13 +165,16 @@ function updateTooltip() {
   chrome.storage.sync.get(null, function (r) {
     chrome.storage.local.get("dangerousDomains", function (re) {
       var state = getSecurityStatus(r, re);
+      console.log(state);
       var t = torpedo.tooltip;
-      var url = torpedo.url;
       var pathname = torpedo.pathname;
-      if (pathname.length > 100) {
-        var replace = pathname.substring(0, 100) + "...";
-        url = url.replace(pathname, replace);
-      }
+      var url = torpedo.url.replace(pathname, "/");
+
+      // commented for study (only want the domain to be shown)
+      // if (pathname.length > 100) {
+      //   var replace = pathname.substring(0, 100) + "...";
+      //   url = url.replace(pathname, replace);
+      // }
       $(t.find("#torpedoURL")[0]).html(
         url.replace(
           torpedo.domain,
@@ -296,9 +299,13 @@ function extractTLDfromDomain(domain) {
  * get domain out of hostname
  */
 function extractDomain(url) {
-  var psl = torpedo.publicSuffixList.getDomain(url);
-  // psl empty -> url is already a valid domain
-  return psl != "" ? psl : url;
+  if (isIP(url)) {
+    return url;
+  } else {
+    var psl = torpedo.publicSuffixList.getDomain(url);
+    // psl empty -> url is already a valid domain
+    return psl != "" ? psl : url;
+  }
 }
 
 /**
