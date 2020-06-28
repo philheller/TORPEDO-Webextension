@@ -66,7 +66,7 @@
   },
 
   "T1Ueberschrift": {
-    "message": "Deposited URL (also called web address):",
+    "message": "Deposited domain:",
     "description": "Header for tooltip"
   },
 
@@ -91,7 +91,7 @@
   },
 
   "T2Ueberschrift": {
-    "message": "Deposited URL (also called web address):",
+    "message": "Deposited domain:",
     "description": "Header for tooltip"
   },
 
@@ -116,7 +116,7 @@
   },
 
   "T31Ueberschrift": {
-    "message": "Deposited URL (also called web address):",
+    "message": "Deposited domain:",
     "description": "Header for tooltip"
   },
 
@@ -141,7 +141,7 @@
   },
 
   "T32Ueberschrift": {
-    "message": "Deposited URL (also called web address):",
+    "message": "Deposited domain:",
     "description": "Header for tooltip"
   },
 
@@ -166,7 +166,7 @@
   },
 
   "T33Ueberschrift": {
-    "message": "Deposited URL (also called web address):",
+    "message": "Deposited domain:",
     "description": "Header for tooltip"
   },
 
@@ -191,7 +191,7 @@
   },
 
   "T4Ueberschrift": {
-    "message": "Referred URL (also known as web address):",
+    "message": "Referred domain:",
     "description": "Header for tooltip"
   },
 
@@ -216,7 +216,7 @@
   },
 
   "T4aUeberschrift": {
-    "message": "Referred URL (also known as web address):",
+    "message": "Referred domain:",
     "description": "Header for tooltip"
   },
 
@@ -241,12 +241,12 @@
   },
 
   "ShortURLUeberschrift": {
-    "message": "Referred URL (also known as web address):",
+    "message": "Referred domain:",
     "description": "Header for tooltip"
   },
 
   "ShortURLErklaerung": {
-    "message": "This domain (highlighted part) is not the target URL. You will be redirected to another URL. To classify the risk of the target URL, TORPEDO would have to detect the target URL.<br>This does not happen automatically, as the detection would put your privacy at risk.",
+    "message": "This domain <div class='torpedoHighlight'>(bold area)</div> is not the target URL. You will be redirected to another URL. To classify the risk of the target URL, TORPEDO would have to detect the target URL.<br>This does not happen automatically, as the detection would put your privacy at risk.",
     "description": "Information on the classification of this domain"
   },
 
@@ -266,12 +266,12 @@
   },
 
   "URLnachErmittelnButton2Ueberschrift": {
-    "message": "The referred URL redirects you to the following URL:",
+    "message": "The referred URL redirects you to the following Domain:",
     "description": "Header for tooltip"
   },
 
   "URLnachErmittelnButton2Erklaerung": {
-    "message": "This domain (highlighted part) is not the target URL, either though. You will be redirected to another URL. To classify the risk of the target URL, TORPEDO would have to detect the target URL.<br>This does not happen automatically, as the detection would put your privacy at risk.",
+    "message": "This domain <div class='torpedoHighlight'>(bold area)</div> is not the target URL, either though. You will be redirected to another URL. To classify the risk of the target URL, TORPEDO would have to detect the target URL.<br>This does not happen automatically, as the detection would put your privacy at risk.",
     "description": "Information on the classification of this domain"
   },
 
@@ -291,7 +291,7 @@
   },
 
   "URLnachErmittelnButtonPrivacyModeUeberschrift": {
-    "message": "The referred URL redirects you to the following URL:",
+    "message": "The referred URL redirects you to the following Domain:",
     "description": "Header for tooltip"
   },
 
@@ -316,7 +316,7 @@
   },
 
   "WarnungPhishUeberschrift": {
-    "message": "Referred URL (also known as web address):",
+    "message": "Referred domain:",
     "description": "Header for tooltip"
   },
 

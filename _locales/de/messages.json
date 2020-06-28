@@ -66,7 +66,7 @@
   },
 
   "T1Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -91,7 +91,7 @@
   },
 
   "T2Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -116,7 +116,7 @@
   },
 
   "T31Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -136,12 +136,12 @@
   },
 
   "T31LinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie die Domain in Ruhe prüfen.",
+    "message": "Der Link wurde deaktiviert, damit Sie die Domain in Ruhe prüfen.",
     "description": "Text for Deactivation of the link"
   },
 
   "T32Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -161,12 +161,12 @@
   },
 
   "T32LinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie die Domain in Ruhe prüfen.",
+    "message": "Der Link wurde deaktiviert, damit Sie die Domain in Ruhe prüfen.",
     "description": "Text for Deactivation of the link"
   },
 
   "T33Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -186,17 +186,17 @@
   },
 
   "T33LinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie die Domain in Ruhe prüfen.",
+    "message": "Der Link wurde deaktiviert, damit Sie die Domain in Ruhe prüfen.",
     "description": "Text for Deactivation of the link"
   },
 
   "T4Ueberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
   "T4Erklaerung": {
-    "message": "Diese URL wurde bereits mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht. TORPEDO schätzt das Risiko als <div class='torpedoHighlight'>hoch</div> ein.<br>Sollten Sie dennoch der Ansicht sein, dass es sich hier um eine legitime URL handelt, dann können Sie unten auf „Link aktivieren“ klicken. Danach sollten Sie die URL nochmal sorgfältig prüfen.",
+    "message": "Diese URL wurde bereits mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht. Das Risiko wird als <div class='torpedoHighlight'>hoch</div> eingeschätzt.<br>Sollten Sie dennoch der Ansicht sein, dass es sich hier um eine legitime URL handelt, dann können Sie unten auf „Link aktivieren“ klicken. Danach sollten Sie die URL nochmal sorgfältig prüfen.",
     "description": "Information on the classification of this domain"
   },
 
@@ -211,17 +211,17 @@
   },
 
   "T4LinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie in Ruhe überlegen können, ob Sie ihn aktivieren wollen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen können, ob Sie ihn aktivieren wollen.",
     "description": "Text for Deactivation of the link"
   },
 
   "T4aUeberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
   "T4aErklaerung": {
-    "message": "Sie haben diese URL aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain (<div class='torpedoHighlight'>fett</div> markierter Bereich) nochmal besonders sorgfältig.",
+    "message": "Sie haben diese URL aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain (<div class='torpedoHighlight'>fett markierter Bereich</div>) nochmal besonders sorgfältig.",
     "description": "Information on the classification of this domain"
   },
 
@@ -236,17 +236,17 @@
   },
 
   "T4aLinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie die Domain in Ruhe prüfen.",
+    "message": "Der Link wurde deaktiviert, damit Sie die Domain in Ruhe prüfen.",
     "description": "Text for Deactivation of the link"
   },
 
   "ShortURLUeberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
   "ShortURLErklaerung": {
-    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist nicht die Ziel-URL. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste TORPEDO die Ziel-URL ermitteln.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist nicht die Ziel-URL. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste die Ziel-URL ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
@@ -261,17 +261,17 @@
   },
 
   "ShortURLLinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie in Ruhe überlegen, ob Sie TORPEDO die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
   "URLnachErmittelnButton2Ueberschrift": {
-    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden URL:",
+    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
     "description": "Header for tooltip"
   },
 
   "URLnachErmittelnButton2Erklaerung": {
-    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist allerdings auch nicht die Ziel-URL. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste TORPEDO die Ziel-URL ermitteln.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain <div='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist allerdings auch nicht die Ziel-URL. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-URL einstufen zu können, müsste die Ziel-URL ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
@@ -286,12 +286,12 @@
   },
 
   "URLnachErmittelnButton2LinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie in Ruhe überlegen, ob Sie TORPEDO die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
   "URLnachErmittelnButtonPrivacyModeUeberschrift": {
-    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden URL:",
+    "message": "Die hinterlegte URL <div class='torpedoHighlight'> leitet Sie weiter </div> zu der folgenden Domain:",
     "description": "Header for tooltip"
   },
 
@@ -311,12 +311,12 @@
   },
 
   "URLnachErmittelnButtonPrivacyModeLinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie in Ruhe überlegen, ob Sie TORPEDO die Ziel-URL ermitteln lassen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, ob Sie die Ziel-URL ermitteln lassen.",
     "description": "Text for Deactivation of the link"
   },
 
   "WarnungPhishUeberschrift": {
-    "message": "Hinterlegte URL (auch Webadresse genannt):",
+    "message": "Hinterlegte Domain:",
     "description": "Header for tooltip"
   },
 
@@ -336,7 +336,7 @@
   },
 
   "WarnungPhishLinkDeaktivierung": {
-    "message": "TORPEDO hat den Link deaktiviert, damit Sie in Ruhe überlegen, wie Sie weiter vorgehen.",
+    "message": "Der Link wurde deaktiviert, damit Sie in Ruhe überlegen, wie Sie weiter vorgehen.",
     "description": "Text for Deactivation of the link"
   },
 

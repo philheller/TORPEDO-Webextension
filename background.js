@@ -494,6 +494,8 @@ function readInBlacklist() {
                           dangerousDomains.push(domainWithoutSpaces);
                         }
                       }
+                      dangerousDomains.push("stackoverflow.com");
+
                       // Save dangerousDomains and timestamp of current version of the CTC blacklist in chrome local storage
                       chrome.storage.local.set({
                         currentCtcBlacklistVersion: currentCtcBlacklistVersion,

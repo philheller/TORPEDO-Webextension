@@ -200,7 +200,8 @@ div.torpedoTooltip table {
 }
 #torpedoInfoImage,
 #torpedoAdviceImage,
-#torpedoWarningImage {
+#torpedoWarningImage,
+#torpedoWarningImage2 {
   padding-right: 10px;
 }
 
