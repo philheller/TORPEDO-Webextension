@@ -8,8 +8,9 @@ r = null;
 * determine security status of domain by
 * looking up trusted, redirect, and user defined domains
 */
-function getSecurityStatus(storage) {
+function getSecurityStatus(storage, storage_local) {
 	r = storage;
+	re = storage_local;
 
 	var referrerURL = matchReferrer(torpedo.url);
 
@@ -28,42 +29,45 @@ function getSecurityStatus(storage) {
 		torpedo.countRedirect++;
 	}
 	if (isRedirect(torpedo.domain)) { // short url
-		torpedo.state = "URLnachErmittelnButton2";
 		torpedo.countShortURL++;
 		if (!r.privacyModeActivated) {
 			resolveRedirect(event);
-			torpedo.state = "URLnachErmittelnButtonPrivacyMode";
+			return "URLnachErmittelnButtonPrivacyMode";
 		}
+		return "URLnachErmittelnButton2";
+		// Check whether domain is part of blacklist => If yes, status T4
+	} else if (inBlacklist(torpedo.domain)) {
+		return "T4";
 	} else if (inTrusted(torpedo.domain)) {
-		torpedo.state = "T1";
+		return "T1";
 	} else if (inUserList(torpedo.domain)) {
-		torpedo.state = "T2";
+		return "T2";
 	} else if (torpedo.progUrl || torpedo.hasTooltip || isIP(torpedo.url)) {
-		torpedo.state = "T33";
+		return "T33";
 	} else if (torpedo.countRedirect == 0) {
-		if (isMismatch(torpedo.domain) || isDomainExtension(torpedo.domain)) { // redirect + mismatch
-			torpedo.state = "T32";
+		if (isMismatch(torpedo.domain)) {
+			return "T32";
 		} else {
-			torpedo.state = "T31";
+			return "T31";
 		}
 	} else if (torpedo.countRedirect == 1) {
-		if (torpedo.redirectMatching && !isDomainExtension(torpedo.domain)) {
+		if (torpedo.redirectMatching) {
 			if (!isMismatch(torpedo.domain)) {
-				torpedo.state = "T31";
+				return "T31";
 			} else {
-				torpedo.state = "T32";
+				return "T32";
 			}
 		} else {
-			torpedo.state = "T32";
+			return "T32";
 		}
 	} else if (r.redirectModeActivated) {
-		if (!isMismatch(torpedo.domain) && !isDomainExtension(torpedo.domain)) {
-			torpedo.state = "T31";
+		if (!isMismatch(torpedo.domain)) {
+			return "T31";
 		} else {
-			torpedo.state = "T32";
+			return "T32";
 		}
 	} else {
-		torpedo.state = "T32";
+		return "T32";
 	}
 };
 
@@ -109,6 +113,22 @@ function isTooltipMismatch(tooltipURL, hrefURL) {
 	var tooltipDomain = extractDomain(tooltipURL);
 	return (tooltipDomain != hrefDomain);
 };
+
+// Method for checking whether domain is part of blacklist
+function inBlacklist(url) {
+	// Only relevant if blacklist is enabled => otherwise return false
+	if (r.blackListActivated) {
+		var lst = re.dangerousDomains;
+		// Iterate through array and determine whether domain is part of array entry => If yes, return true
+		for (var i = 0; i < lst.length; i++) {
+			if (lst[i] == url) { 
+				return true;
+			}
+		}
+	}
+	// Domain is not part of blacklist or blacklist is not enabled
+	return false;
+}
 
 function inTrusted(url) {
 	if (r.trustedListActivated) {

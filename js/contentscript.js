@@ -12,10 +12,32 @@ torpedo.opened = false;
 torpedo.progUrl = false;
 torpedo.hasTooltip = false;
 
+
+
 $(document).ready(function () {
   chrome.runtime.sendMessage({ "name": "TLD" }, function (r) {
     torpedo.publicSuffixList.parse(r, punycode.toASCII);
+
   });
+
+  chrome.storage.local.get(['dangerousDomains', 'blacklistWasUpdated'], function (re) {
+    //extract the domains from the blacklist entries only if the blacklist has been updated 
+    if (re.blacklistWasUpdated) {
+      var lst = re.dangerousDomains;
+      var dangerousDomains = [];
+
+      for (var i = 0; i < lst.length; i++) {
+        var dom = extractDomain(lst[i]);
+        dangerousDomains.push(dom);
+      }
+
+      chrome.storage.local.set({
+        'dangerousDomains': dangerousDomains,
+        'blacklistWasUpdated': false
+      });
+    }
+  });
+
   torpedo.location = window.location.host;
   var mouseenter = "";
   var iframe = "";
@@ -75,6 +97,7 @@ $(document).ready(function () {
   }
 });
 
+
 function openTooltip(e, type) {
   torpedo.target = e.currentTarget;
   torpedo.progUrl = false;
@@ -88,6 +111,8 @@ function openTooltip(e, type) {
       } catch (e) { }
     }
   }
+
+
   torpedo.state = "unknown";
   chrome.storage.sync.get(null, function (r) {
     try {
@@ -102,12 +127,10 @@ function openTooltip(e, type) {
       setNewUrl(url);
 
       var tooltipURL = hasTooltip(torpedo.target);
- 
+
       if (tooltipURL != "<HAS_NO_TOOLTIP>") {
         torpedo.hasTooltip = isTooltipMismatch(tooltipURL, torpedo.url);
       }
-
-
 
       // if we are on a site that automatically redirects over its own servers
       if (r.referrerSites.indexOf(torpedo.location) > -1) {
@@ -115,6 +138,15 @@ function openTooltip(e, type) {
         resolveReferrer(r);
         torpedo.target.href = torpedo.url;
       }
+
+
+      $(torpedo.target).on("mouseenter", function (event) {
+        if (torpedo.timerInterval != null) {
+          clearInterval(torpedo.timerInterval);
+        }
+      });
+
+
 
       // open the qTip
       $(torpedo.target).qtip({
@@ -126,22 +158,25 @@ function openTooltip(e, type) {
         show: {
           event: e.type,
           ready: true,
-          solo: true
+          solo: true,
+          delay: 250
         },
         hide: {
           fixed: true,
           event: "mouseleave",
-          delay: 600
+          delay: 200
         },
         position: {
-          at: 'center bottom',
           my: 'top left',
+          at: 'bottom left',
           viewport: true,
-          target: 'mouse',
+          target: $(torpedo.target), 
           adjust: {
-            y: 10,
+            y: 0,
+            x: 0,
             mouse: false,
-            method: 'flip flip'
+            method: 'flip flip',
+            resize: true
           }
         },
         style: {
@@ -153,8 +188,13 @@ function openTooltip(e, type) {
             torpedo.api = api;
             torpedo.tooltip = api.elements.content;
 
-            $(torpedo.tooltip).on("mouseover", function () { torpedo.opened = true; });
-            $(torpedo.tooltip).on("mouseleave", function () { torpedo.opened = false; });
+            $(torpedo.tooltip).on("mouseenter", function () {
+              torpedo.opened = true;
+            });
+
+            $(torpedo.tooltip).on("mouseleave", function () {
+              torpedo.opened = false;
+            });
 
             // set the icon to "OK", because TORPEDO works on this page
             chrome.runtime.sendMessage({ "name": "ok" });
@@ -162,6 +202,11 @@ function openTooltip(e, type) {
             // init the tooltip elements and texts
             initTooltip();
             updateTooltip();
+          },
+          hide: function () {
+            if (torpedo.timerInterval != null) {
+              clearInterval(torpedo.timerInterval);
+            }
           }
         }
       });
