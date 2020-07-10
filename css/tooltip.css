@@ -196,8 +196,8 @@ div.torpedoTooltip table {
 
 #torpedoDomain {
   font-weight: bold !important;
-  /* letter-spacing: 3px !important;
-  margin: 10px 2px 25px 2px; commented out for study*/
+  letter-spacing: 3px !important;
+  margin: 10px 2px 25px 2px;
 }
 #torpedoInfoImage,
 #torpedoAdviceImage,
