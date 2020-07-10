@@ -168,13 +168,12 @@ function updateTooltip() {
       console.log(state);
       var t = torpedo.tooltip;
       var pathname = torpedo.pathname;
-      var url = torpedo.url.replace(pathname, "/");
+      var url = torpedo.url;
 
-      // commented for study (only want the domain to be shown)
-      // if (pathname.length > 100) {
-      //   var replace = pathname.substring(0, 100) + "...";
-      //   url = url.replace(pathname, replace);
-      // }
+      if (pathname.length > 100) {
+        var replace = pathname.substring(0, 100) + "...";
+        url = url.replace(pathname, replace);
+      }
       $(t.find("#torpedoURL")[0]).html(
         url.replace(
           torpedo.domain,
