@@ -71,7 +71,7 @@
   },
 
   "T1Erklaerung": {
-    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link  wird aufgrund der bekannten Vertrauenswürdigkeit der Domain (<div class='torpedoHighlight'>fett hervorgehoben Bereich</div>) als gering eingestuft.",
+    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link  wird aufgrund der bekannten Vertrauenswürdigkeit der Domain als gering eingestuft.",
     "description": "Information on the classification of this domain"
   },
 
@@ -96,7 +96,7 @@
   },
 
   "T2Erklaerung": {
-    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link wird aufgrund Ihren früheren Angaben zur Vertrauenswürdigkeit der Domain (<div class='torpedoHighlight'>fett hervorgehoben Bereich</div>) als gering eingestuft.",
+    "message": "Geringes Risiko: Das Risiko für das Klicken auf den Link wird aufgrund Ihren früheren Angaben zur Vertrauenswürdigkeit der Domain  als gering eingestuft.",
     "description": "Information on the classification of this domain"
   },
 
@@ -121,12 +121,12 @@
   },
 
   "T31Erklaerung": {
-    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Sie müssen hier das Risiko selbst einstufen. Hierzu prüfen Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich</div>). ",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Sie müssen hier das Risiko selbst einstufen. Hierzu prüfen Sie die Domain. ",
     "description": "Information on the classification of this domain"
   },
 
   "T31Infotext": {
-    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft.",
+    "message": "Das bedeutet, dass die Domain und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -146,12 +146,12 @@
   },
 
   "T32Erklaerung": {
-    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich</div>) prüfen.",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain prüfen.",
     "description": "Information on the classification of this domain"
   },
 
   "T32Infotext": {
-    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
+    "message": "Das bedeutet, dass die Domain der URL und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -171,12 +171,12 @@
   },
 
   "T33Erklaerung": {
-    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain (<div class='torpedoHighlight'>fett hervorgehobener Bereich </div>) prüfen.",
+    "message": "<div class='torpedoHighlight'>Unbekanntes Risiko aber vorsichtig sein:</div> Das Risiko für das Klicken auf den Link kann nicht bestimmt werden. Es wurde aber mindestens ein Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Sie müssen hier das Risiko selbst einstufen, in dem Sie die Domain prüfen.",
     "description": "Information on the classification of this domain"
   },
 
   "T33Infotext": {
-    "message": "Das bedeutet, dass die Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
+    "message": "Das bedeutet, dass die Domain und damit auch ihre Vertrauenswürdigkeit TORPEDO nicht bekannt ist. Diese ist also nicht unter den in Deutschland am Häufigsten besuchten Domains. Diese Domain wurde auch nicht mehrfach von Ihnen in der Vergangenheit aufgerufen oder von Ihnen in der Vergangenheit als vertrauenswürdig eingestuft. Zusätzlich hat TORPEDO aber mindestens einen Indikator entdeckt, der oft auch in betrügerischen E-Mails verwendet wird, um Sie zu täuschen. Zu den Indikatoren zählt z.B. 1) ein Unterschied zwischen der angezeigten Domain im Text und der hinterlegten Domain, 2) die Tatsache, dass die Domain hinter diesem Link sehr ähnlich zu einer der von TORPEDO oder von Ihnen als vertrauenswürdig eingestuften Domains ist; 3) wenn eine Domain zusätzlich im Tooltip angezeigt wird und diese von der eigentlichen Domain hinter dem Link abweicht.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -221,7 +221,7 @@
   },
 
   "T4aErklaerung": {
-    "message": "Sie haben diese Domain aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain (<div class='torpedoHighlight'>fett markierter Bereich</div>) nochmal besonders sorgfältig.",
+    "message": "Sie haben diese Domain aktiviert, obwohl Sie in der Vergangenheit mit Phishing zum Thema Corona bzw. Covid-19 in Verbindung gebracht wurde. Bitte überprüfen Sie die Domain nochmal besonders sorgfältig.",
     "description": "Information on the classification of this domain"
   },
 
@@ -246,7 +246,7 @@
   },
 
   "ShortURLErklaerung": {
-    "message": "Diese Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist nicht die Ziel-Domain. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain ist nicht die Ziel-Domain. Sie werden von dort weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
@@ -271,7 +271,7 @@
   },
 
   "URLnachErmittelnButton2Erklaerung": {
-    "message": "Diese Domain <div class='torpedoHighlight'>(fett hervorgehobener Bereich)</div> ist allerdings auch nicht die Ziel-Domain. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
+    "message": "Diese Domain ist allerdings auch nicht die Ziel-Domain. Sie werden von dort ebenfalls weitergeleitet. Um das Risiko der Ziel-Domain einstufen zu können, müsste die Ziel-Domain ermittelt werden.<br>Dies geschieht nicht automatisch, da eine Ermittlung Ihre Privatsphäre gefährdet.",
     "description": "Information on the classification of this domain"
   },
 
