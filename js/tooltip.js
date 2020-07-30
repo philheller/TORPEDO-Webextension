@@ -168,18 +168,47 @@ function updateTooltip() {
       console.log(state);
       var t = torpedo.tooltip;
       var pathname = torpedo.pathname;
-      var url = torpedo.url.replace(pathname, "/");
+      var url;
+      if (pathname === "/" || "") {
+        url = torpedo.url.slice(0, -1);
+      } else {
+        url = torpedo.url.replace(pathname, "");
+      }
+      var url_copy = url;
+      /* use of html() to change tooltip content. Variable url is also used in other functions.
+      Manipulations are applied to url copy to insure integrity. */
+      // console.log(`This is the pathname ${pathname}`);
+      // console.log(`This is the url: ${url_copy}`);
 
       // commented for study (only want the domain to be shown)
       // if (pathname.length > 100) {
       //   var replace = pathname.substring(0, 100) + "...";
       //   url = url.replace(pathname, replace);
       // }
+
+      // prep url
+      var urlSplitter = url_copy.replace(/http(s)?:\/\/?(www\.)?/, "");
+      let counter = urlSplitter.split(".");
+      let urlSubdomain = "";
+      if (counter.length >= 3) {
+        // console.log(counter);
+        for (i = 0; i < counter.length - 2; i++) {
+          urlSubdomain += counter[i] + ".";
+        }
+      } else urlSubdomain = "";
+      // console.log(`these are all the subdomains: ${urlSubdomain}`);
+
+      if (urlSubdomain != "" && !isIP(torpedo.url)) {
+        // console.log(`Is Ip result: ${isIP(torpedo.url)}`);
+        url_copy = url_copy.replace(urlSubdomain, "[...]");
+      }
+      if (pathname != "/" && !"") url_copy += "[...]";
+      // console.log(`this is the url copy ${url_copy}`);
       $(t.find("#torpedoURL")[0]).html(
-        url.replace(
+        (url_copy = url_copy.replace(
           torpedo.domain,
           '<span id="torpedoDomain">' + torpedo.domain + "</span>"
-        )
+        ))
       );
 
       assignText(state, url, t);
