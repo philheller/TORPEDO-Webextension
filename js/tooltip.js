@@ -197,7 +197,7 @@ function updateTooltip() {
         }
       } else urlSubdomain = "";
       // console.log(`these are all the subdomains: ${urlSubdomain}`);
-
+      url_copy = url_copy.replace("www.", "");
       if (urlSubdomain != "" && !isIP(torpedo.url)) {
         // console.log(`Is Ip result: ${isIP(torpedo.url)}`);
         url_copy = url_copy.replace(urlSubdomain, "[...]");
