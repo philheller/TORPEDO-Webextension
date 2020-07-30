@@ -66,7 +66,7 @@
   },
 
   "T1Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -91,7 +91,7 @@
   },
 
   "T2Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -116,7 +116,7 @@
   },
 
   "T31Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -141,7 +141,7 @@
   },
 
   "T32Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -166,7 +166,7 @@
   },
 
   "T33Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -191,7 +191,7 @@
   },
 
   "T4Ueberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -216,7 +216,7 @@
   },
 
   "T4aUeberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -241,7 +241,7 @@
   },
 
   "ShortURLUeberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 
@@ -301,7 +301,7 @@
   },
 
   "URLnachErmittelnButtonPrivacyModeInfotext": {
-    "message": "Die hinterlegte Domain:<br><URL><br>Anhand des Aufbaus der hinterlegten Domain erkennt TORPEDO, dass Sie von dieser Domain aus zu obiger Ziel-Domain weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten Domain, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-Domain erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-Domain zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese Domain interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-Domain zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-Domain zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-Domain direkt zu schicken.",
+    "message": "Die hinterlegte Domain: <br><URL><br>Anhand des Aufbaus der hinterlegten Domain erkennt TORPEDO, dass Sie von dieser Domain aus zu obiger Ziel-Domain weitergeleitet werden. Dies kann verschiedene Gründe haben. In jedem Fall weiß der Betreiber der Domain der hinterlegten Domain, dass Sie auf den Link geklickt haben. Daher ist hier Ihre Privatsphäre gefährdet.<br>Anhand des Aufbaus der Ziel-Domain erkennt TORPEDO, dass es sich bei dieser Domain um die eines Kurz-URL Dienstes handelt. Um die tatsächliche Ziel-Domain zu ermitteln, ist es notwendig den Kurz-URL Dienst aufzurufen. Dadurch weiß der Betreiber dieses Dienstes, dass Sie sich potentiell für diese Domain interessieren. Daher ist Ihre Privatsphäre gefährdet, wenn Sie TORPEDO beauftragen die Ziel-Domain zu ermitteln (dies gilt auch, wenn Sie selbst den Kurz-URL Dienst aufrufen, um die Ziel-Domain zu ermitteln). Um dies zu vermeiden, können Sie den Absender bitten Ihnen die Ziel-Domain direkt zu schicken.",
     "description": "More information on the evaluation of this domain"
   },
 
@@ -316,7 +316,7 @@
   },
 
   "WarnungPhishUeberschrift": {
-    "message": "Hinterlegte Domain:",
+    "message": "Hinterlegte Domain der URL (auch Webadresse genannt):",
     "description": "Header for tooltip"
   },
 

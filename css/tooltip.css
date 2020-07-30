@@ -240,6 +240,10 @@ div.torpedoTooltip table {
   width: 100%;
   margin-top: 5px;
 }
+#torpedoURL {
+  display: flex;
+  justify-content: center;
+}
 #torpedoPopupImage {
   width: 600px;
   height: 380px;
