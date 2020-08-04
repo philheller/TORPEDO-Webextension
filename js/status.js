@@ -44,8 +44,11 @@ function getSecurityStatus(storage, storage_local) {
     return "T1";
   } else if (inUserList(torpedo.domain)) {
     return "T2";
-  } else if (torpedo.progUrl || torpedo.hasTooltip || isIP(torpedo.url)) {
+  } else if (torpedo.progUrl || torpedo.hasTooltip /* || isIP(torpedo.url) */) {
+    // IP commented out above for study purposes
     return "T33";
+  } else if (isIP(torpedo.url)) {
+    return "T31";
   } else if (torpedo.countRedirect == 0) {
     if (isMismatch(torpedo.domain)) {
       return "T32";
