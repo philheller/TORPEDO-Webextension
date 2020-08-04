@@ -194,11 +194,11 @@ div.torpedoTooltip table {
   border: 0.3rem solid red !important;
 }
 
-#torpedoDomain {
-  /*  font-weight: bold !important; 
+/* #torpedoDomain {
+  font-weight: bold !important;
   letter-spacing: 3px !important;
-  margin: 10px 2px 25px 2px; */
-}
+  margin: 10px 2px 25px 2px;
+} */
 #torpedoInfoImage,
 #torpedoAdviceImage,
 #torpedoWarningImage,
@@ -243,6 +243,7 @@ div.torpedoTooltip table {
 #torpedoURL {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 #torpedoPopupImage {
   width: 600px;
