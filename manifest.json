@@ -43,7 +43,8 @@
         "https://3c.gmx.net/*",
         "https://3c-bap.gmx.net/*",
         "https://mail.google.com/*",
-        "https://owa.kit.edu/*"
+        "https://owa.kit.edu/*",
+        "https://webmail.email-study.de/*"
       ],
       "css": ["css/jquery.qtip.min.css", "css/tooltip.css"],
       "js": [

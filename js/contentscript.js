@@ -62,6 +62,11 @@ $(document).ready(function () {
     case "mail.aol.com":
       mouseenter = ["#displayMessage"];
       break;
+    case "webmail.email-study.de":
+      mouseenter = ["#messagebody"];
+      // increase size of content field for roundcube
+      $($(mouseenter[0])).css("min-height", "40rem");
+      break;
     case "email.t-online.de":
       iframe = ["mailreadview"];
       break;
@@ -161,13 +166,22 @@ function openTooltip(e, type) {
           clearInterval(torpedo.timerInterval);
         }
       });
-
       // open the qTip
       $(torpedo.target).qtip({
         id: "torpedo",
         content: {
           text: tooltipText(url),
           button: true,
+        },
+        events: {
+          click: function (event, api) {
+            const tooltip = api.elements.tooltip;
+            console.log("I am rerendering!");
+            tooltip.qtip("reposition");
+          },
+          show: function (event, api) {
+            console.log("I am showing!");
+          },
         },
         show: {
           event: e.type,
@@ -183,8 +197,10 @@ function openTooltip(e, type) {
         position: {
           my: "top left",
           at: "bottom left",
+          // will inherit from container
           viewport: true,
           target: $(torpedo.target),
+          container: $("body"),
           adjust: {
             y: 0,
             x: 0,

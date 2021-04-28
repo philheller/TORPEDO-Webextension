@@ -255,6 +255,9 @@ function updateTooltip() {
           countdown(r.timer, state);
           break;
       }
+      const qapi = $(torpedo.target).data("qtip");
+      console.log(qapi);
+      qapi.render();
     });
   });
 }
