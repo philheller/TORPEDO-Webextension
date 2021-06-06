@@ -16,7 +16,7 @@ function getSecurityStatus(storage, storage_local) {
     try {
       const href = new URL(referrerURL);
       setNewUrl(href);
-    } catch (e) { }
+    } catch (e) {}
 
     referrerURL = matchReferrer(torpedo.url);
     torpedo.countRedirect++;
@@ -33,7 +33,8 @@ function getSecurityStatus(storage, storage_local) {
   } else if (inBlacklist(torpedo.domain)) {
     return "T4";
   } else if (inTrusted(torpedo.domain)) {
-    return "T1";
+    // forwarding to T33 for now, may be changed to it's own case
+    return inUncontrolledContent(torpedo.url) ? "T33" : "T1";
   } else if (inUserList(torpedo.domain)) {
     return "T2";
   } else if (torpedo.progUrl || torpedo.hasTooltip || isIP(torpedo.url)) {
@@ -101,7 +102,10 @@ function isMismatch(domain) {
     const uri = new URL(displayedLinkText);
     var displayedLinkTextDom = extractDomain(uri.hostname);
 
-    if (displayedLinkTextDom != torpedo.oldDomain && displayedLinkTextDom != domain) {
+    if (
+      displayedLinkTextDom != torpedo.oldDomain &&
+      displayedLinkTextDom != domain
+    ) {
       return true;
     }
   } catch (e) {
@@ -111,7 +115,12 @@ function isMismatch(domain) {
 }
 
 function isTooltipMismatch(tooltipURL, hrefURL) {
-  if (tooltipURL == "" || tooltipURL == undefined || hrefURL == "" || hrefURL == undefined) {
+  if (
+    tooltipURL == "" ||
+    tooltipURL == undefined ||
+    hrefURL == "" ||
+    hrefURL == undefined
+  ) {
     return false;
   }
   try {
@@ -127,13 +136,13 @@ function isTooltipMismatch(tooltipURL, hrefURL) {
 }
 
 // Method for checking whether domain is part of blacklist
-function inBlacklist(url) {
+function inBlacklist(domain) {
   // Only relevant if blacklist is enabled => otherwise return false
   if (r.blackListActivated) {
     var lst = re.dangerousDomains;
     // Iterate through array and determine whether domain is part of array entry => If yes, return true
     for (var i = 0; i < lst.length; i++) {
-      if (lst[i] == url) {
+      if (lst[i] == domain) {
         return true;
       }
     }
@@ -142,22 +151,35 @@ function inBlacklist(url) {
   return false;
 }
 
-function inTrusted(url) {
+function inTrusted(domain) {
   if (r.trustedListActivated) {
     var lst = r.trustedDomains;
     for (var i = 0; i < lst.length; i++) {
-      if (lst[i].indexOf(url) > -1) return true;
+      if (lst[i].indexOf(domain) > -1) return true;
     }
   }
   return false;
 }
 
-function inUserList(url) {
+function inUserList(domain) {
   var lst = r.userDefinedDomains;
   for (var i = 0; i < lst.length; i++) {
-    if (lst[i].indexOf(url) > -1) return true;
+    if (lst[i].indexOf(domain) > -1) return true;
   }
   return false;
+}
+
+/**
+ *
+ * @param {*} url full url which is used to see if a known domain (including subdomains) is available to public content
+ */
+function inUncontrolledContent(url) {
+  urlElement = new URL(url);
+  var lst = r.thirdPartyControlledDomains;
+  const found = lst.find((listDomain, listIndex) =>
+    urlElement.hostname.includes(listDomain)
+  );
+  return found ? true : false;
 }
 
 function isIP(address) {
