@@ -433,6 +433,7 @@ chrome.runtime.onInstalled.addListener(function () {
     ],
     referrerSites: ["3c-bap.web.de", "3c.web.de", "3c.gmx.net"],
     publicSuffixList: {},
+    cloudServicesDomains: ["dropbox.com", "onedrive.com"],
   });
   // Initialize local storage
   // Local storage is used because of higher storage volume
