@@ -30,8 +30,6 @@ function getSecurityStatus(storage, storage_local) {
     }
     return "URLnachErmittelnButton2";
     // Check whether domain is part of blacklist => If yes, status T4
-  } else if (inBlacklist(torpedo.domain)) {
-    return "T4";
   } else if (inTrusted(torpedo.domain)) {
     return "T1";
   } else if (inUserList(torpedo.domain)) {
