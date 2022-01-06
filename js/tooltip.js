@@ -10,7 +10,7 @@ torpedo.oldUrl = "";
  */
 function tooltipText() {
   var text =
-    "<div id='torpedoWarning'> \
+    "<div id='torpedoWarning' class='loader-active'> \
                 <img id='torpedoWarningImage' src='" +
     chrome.extension.getURL("img/warning.png") +
     "'> \
@@ -19,10 +19,10 @@ function tooltipText() {
     "'> \
                 <p id='torpedoWarningText'></p>\
               </div>\
-              <div><a href='" +
+              <div class='loader-active'><a href='" +
     torpedo.url +
     "' id='torpedoURL''></a></div> \
-              <div style='display:none' id='torpedoContextMenu'>\
+              <div style='display:none' class='loader-active' id='torpedoContextMenu'>\
                   <ul>\
                       <li id='torpedoMarkTrusted'></li>\
                       <li id='torpedoGoogle'></li>\
@@ -30,28 +30,28 @@ function tooltipText() {
                       <li id='torpedoOpenTutorial'></li>\
                   </ul>\
               </div>\
-              <div><p id='torpedoSecurityStatus'></p></div> \
-              <div id='torpedoAdvice'> \
+              <div class='loader-active'><p id='torpedoSecurityStatus'></p></div> \
+              <div class='loader-active' id='torpedoAdvice'> \
                 <img id='torpedoAdviceImage' src='" +
     chrome.extension.getURL("img/advice.png") +
     "'> \
                 <p id='torpedoAdviceText'></p> \
               </div> \
-			        <div id='torpedoAdviceDiv'><p id='torpedoMoreAdvice'></p></div> \
-              <div id='torpedoInfo'>  \
+			        <div class='loader-active' id='torpedoAdviceDiv'><p id='torpedoMoreAdvice'></p></div> \
+              <div class='loader-active' id='torpedoInfo'>  \
                 <img id='torpedoInfoImage' src='" +
     chrome.extension.getURL("img/info.png") +
     `'> \
                 <p id='torpedoInfoText'></p> \
               </div>\
-              <div id='torpedoInfoDiv'><p id='torpedoMoreInfo'></p></div> \
-              <div><button id='torpedoMoreInfoButton' type='button'></button></div> \
-              <div><button id='torpedoRedirectButton' type='button''></button></div> \
-              <div><button id='torpedoActivateLinkButton' type='button''></button></div>
-              <div><p id='torpedoLinkDelay'></p></div>
-              <p id='torpedoTimer'></p>
+              <div class='loader-active' id='torpedoInfoDiv'><p id='torpedoMoreInfo'></p></div> \
+              <div class='loader-active'><button id='torpedoMoreInfoButton' type='button'></button></div> \
+              <div class='loader-active'><button id='torpedoRedirectButton' type='button''></button></div> \
+              <div class='loader-active'><button id='torpedoActivateLinkButton' type='button''></button></div>
+              <div class='loader-active'><p id='torpedoLinkDelay'></p></div>
+              <p class='loader-active' id='torpedoTimer'></p>
               ` +
-    `<div class="loader"> \
+    `<div class="loader loader-active"> \
           <div class="dots"> \
             <div class="dot dot-0"></div> \
             <div class="dot dot-1"></div> \
