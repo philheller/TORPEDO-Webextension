@@ -50,6 +50,29 @@ function tooltipText() {
               <div><button id='torpedoActivateLinkButton' type='button''></button></div>
               <div><p id='torpedoLinkDelay'></p></div>
               <p id='torpedoTimer'></p>
+              ` +
+    `<div class="loader"> \
+          <div class="dots"> \
+            <div class="dot dot-0"></div> \
+            <div class="dot dot-1"></div> \
+            <div class="dot dot-2"></div> \
+            <div class="dot dot-3"></div> \
+            <div class="dot dot-4"></div> \
+            <div class="dot dot-5"></div> \
+            <div class="dot dot-6"></div> \
+            <div class="dot dot-7"></div> \
+            <div class="dot dot-8"></div> \
+            <div class="dot dot-9"></div> \
+          </div> \
+          <div class="lens"> \
+            <img src="${chrome.runtime.getURL(
+              "./img/TORPEDO_Icon.svg"
+            )}" alt="loading..." /> \
+          </div> \
+          <div class="load-text"> \
+            <p>Loading...</p> \
+          </div> \
+        </div> \
               `;
   return text;
 }
@@ -57,6 +80,7 @@ function tooltipText() {
 function initTooltip() {
   // context menu
   var tooltip = torpedo.tooltip;
+  onlyShowLoader();
   torpedo.countRedirect = 0;
   torpedo.countShortURL = 0;
   torpedo.oldDomain = torpedo.domain;
@@ -247,6 +271,7 @@ function updateTooltip() {
         break;
     }
   });
+  deactivateLoader();
 }
 
 /**
@@ -340,4 +365,16 @@ function processClick() {
       chrome.storage.sync.set({ onceClickedDomains: domains });
     }
   });
+}
+
+function onlyShowLoader() {
+  const tooltip = torpedo.tooltip[0];
+
+  $(".torpedoTooltip>div>*").addClass("loader-active");
+}
+
+function deactivateLoader() {
+  const tooltip = torpedo.tooltip[0];
+
+  $(".torpedoTooltip>div>*").removeClass("loader-active");
 }
