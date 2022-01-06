@@ -43,7 +43,7 @@ $dots: (
     "y": 65/ 100 * $size,
   ),
 );
-.loader {
+div.loader {
   &:not(.loader-active) {
     display: none;
   }
@@ -55,10 +55,7 @@ $dots: (
   width: $size;
   height: $size;
   position: relative;
-  top: 50%;
-  left: 50%;
   margin: auto;
-  transform: translate(-50%, -50%);
   .dots {
     position: absolute;
     height: 100%;
